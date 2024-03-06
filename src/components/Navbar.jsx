@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-slate-700 text-slate-50 p-5 flex justify-around items-center">
-        <h1 className="text-xl" >Shopeasy</h1>
+        <h1 className="text-3xl" >Shopeasy</h1>
         <div className="flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

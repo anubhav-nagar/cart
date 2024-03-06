@@ -6,25 +6,25 @@ const data = [
     {
         "id": 1,
         "name": "Samsung Galaxy S8",
-        "price": "$599.99",
+        "price": 599.99,
         "img": phone1
     },
     {
         "id": 2,
         "name": "Google Pixel",
-        "price": "$499.99",
+        "price": 499.99,
         "img": phone2
     },
     {
         "id": 3,
         "name": "Xiaomi Redmi Note 2",
-        "price": "$699.99",
+        "price": 699.99,
         "img": phone3
     },
     {
         "id": 4,
         "name": "Samsung Galaxy S7",
-        "price": "$399.99",
+        "price": 399.99,
         "img": phone4
     }
 ]

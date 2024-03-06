@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { useContext } from "react";
 import {CartContext} from "../App";
+import { TotalContext } from "../App";
 
 const Phone = ( { data } ) => {
     const {cart, setCart} = useContext(CartContext);
+    const {total, setTotal} = useContext(TotalContext);
+
     const [count, setCount] = useState(0);
     function handleAddClick() {
         setCount(count + 1);
         setCart(cart+1);
+        console.log(typeof total, typeof data.price)
+        setTotal(prevTotal => Math.round((prevTotal + data.price) * 100) / 100);
     }
     function handleRemoveClick() {
         if(count>0){
             setCount(count-1);
             setCart(cart-1);
+            setTotal(prevTotal => Math.round((prevTotal - data.price) * 100) / 100);
+
         }
     }
     
@@ -22,7 +29,7 @@ const Phone = ( { data } ) => {
             <img src={data.img} alt="phone" className="w-18 h-20" />
             <div className="self-center">
                 <h2>{data.name}</h2>
-                <p>Price: {data.price}</p>
+                <p className="text-gray-400">Price: ${data.price}</p>
             </div>
         </div>
         <div className="flex self-center">
