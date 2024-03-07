@@ -17,7 +17,7 @@ const Total = () => {
                 <h2>${total}</h2>
             </div>
             <div className="flex justify-center mt-4 mb-12 text-md">
-                <button className="bg-blue-100 p-2 rounded-lg" onClick={handleClearButton}>Clear Cart</button>
+                <button className="bg-blue-100 p-2 rounded-lg" onClick={() => window.location.reload(false)}>Clear Cart</button>
             </div>
         </div>
     )
