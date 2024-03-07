@@ -18,5 +18,7 @@ This project is a simple shopping cart application built with React and Vite.
 
 ## Live Demo
 
-You can see the live demo of this project here (Github pages):
+You can see the live demo of this project here (Github pages): https://anubhav-nagar.github.io/cart/
+
+![Screenshot of the application](./src/assets/images/demo.png)
 
