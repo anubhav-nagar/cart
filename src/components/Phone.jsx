@@ -34,7 +34,7 @@ const Phone = ( { data } ) => {
         </div>
         <div className="flex self-center">
             <button className="rounded-full bg-blue-300 w-8 h-8 mr-3 align-middle" onClick={handleRemoveClick}>-</button>
-            <p className="self-center w-4  ">{count}</p>
+            <p className="self-center w-4  ">{cart===0?0:count}</p>
             <button className="rounded-full bg-blue-300 w-8 h-8 ml-3" onClick={handleAddClick}>+</button>
         </div>
     </div>

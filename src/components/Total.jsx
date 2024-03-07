@@ -1,9 +1,13 @@
 import { TotalContext } from "../App";
 import { useContext } from "react";
+import { CartContext } from "../App";
+
 const Total = () => {
     const {total, setTotal} = useContext(TotalContext);
+    const {cart, setCart} = useContext(CartContext);
     function handleClearButton(){
         setTotal(0);
+        setCart(0);
     }
     return (
         <div>
